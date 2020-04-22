@@ -1,1 +1,105 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIFY</title>
+    <link rel="stylesheet" href="CSS/EstiloPI2020.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="IMG/Logox Musify.png" alt="Musify">
+        </div>
+        <nav class="nav">
+            <a href="">Home</a>
+            <a href="">Genres</a>
+            <a href="">Playlists</a>
+            <a href="">Log In Register</a>
+        </nav>
+    </header>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="box" placeholder="Type to search">
+        <a class="search-btn" href="#">
+            <i class="fa fa-search-plus"></i>         
+        </a>
+    </div>
+    
+</body>
+</html>
+
+CSS
+body{
+    background-image: url(../IMG/Fondo\ PI2020.jpg);
+}
+
+.header{
+    background-color: rgb(110, 159, 248);
+    color:black;
+    display: grid;
+    grid-template-columns: 80px 440px;
+    gap: 820px;
+    text-decoration-color: white;
+    height: 100%;
+}
+
+.logo{
+    padding-left: 4mm;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 200px;
+    margin: 15px;
+    gap: 7px;
+    font-size: 5mm; 
+    padding-top: 2mm;
+    font-style: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.search-box{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: rgb(110, 159, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 3mm;
+    color:gray;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 37px;
+    width: 440px;
+}
 
