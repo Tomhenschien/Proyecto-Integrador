@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,13 +27,147 @@ HTML
             <i class="fa fa-search-plus"></i>         
         </a>
     </div>
-    
+
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left">
+            <img src="IMG/Left slider.svg.png" alt="">
+        </button>
+            <div class="carousel__track-container">
+                 <ul class="carousel__track">
+                     <li class="carousel__slide">
+                        <img class="carousel__image" src="IMG/Slide 2.png" alt="Slide 1">
+                     </li>
+                     <li class="carousel__slide">
+                        <img class="carousel__image" src="IMG/Slide 1.png" alt="Slide 2">
+                     </li>
+                 </ul>
+            </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="IMG/Right slider.svg.png" alt="">
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+    <div class="tops">
+        <a href="">TOP TRACKS</a>
+        <a href="">TOP ARTISTS</a>
+        <a href="">TOP ALBUMS</a>
+    </div>
+
+
+
+    <div id ="gridtrack">
+        <div>
+            <a href="">track1</a>
+        </div>
+        <div>
+            <a href="">track2</a>
+        </div>
+        <div>
+            <a href="">track3</a>
+        </div>
+        <div>
+            <a href="">track4</a>
+        </div>
+        <div>
+            <a href="">track5</a>
+        </div>
+        <div>
+            <a href="">track6</a>
+        </div>
+        <div>
+            <a href="">track7</a>
+        </div>
+        <div>
+            <a href="">track8</a>
+        </div>
+        <div>
+            <a href="">track9</a>
+        </div>
+        <div>
+            <a href="">track10</a>
+        </div>
+    </div>
+
+    <div id ="gridartist">
+        <div>
+            <a href="">Artist1</a>
+        </div>
+        <div>
+            <a href="">Artist2</a>
+        </div>
+        <div>
+            <a href="">Artist3</a>
+        </div>
+        <div>
+            <a href="">Artist4</a>
+        </div>
+        <div>
+            <a href="">Artist5</a>
+        </div>
+        <div>
+            <a href="">Artist6</a>
+        </div>
+        <div>
+            <a href="">Artist7</a>
+        </div>
+        <div>
+            <a href="">Artist8</a>
+        </div>
+        <div>
+            <a href="">Artist9</a>
+        </div>
+        <div>
+            <a href="">Artist10</a>
+        </div>
+    </div>
+
+    <div id ="gridalbums">
+        <div>
+            <a href="">Album1</a>
+        </div>
+        <div>
+            <a href="">Album2</a>
+        </div>
+        <div>
+            <a href="">Album3</a>
+        </div>
+        <div>
+            <a href="">Album4</a>
+        </div>
+        <div>
+            <a href="">Album5</a>
+        </div>
+        <div>
+            <a href="">Album6</a>
+        </div>
+        <div>
+            <a href="">Album7</a>
+        </div>
+        <div>
+            <a href="">Album8</a>
+        </div>
+        <div>
+            <a href="">Album9</a>
+        </div>
+        <div>
+            <a href="">Album10</a>
+        </div>
+    </div>
+        
+  <footer>
+      <h1>Bautista Sanjurjo, Franco Leone y Tomas Henschiens</h1>
+  </footer>
 </body>
 </html>
 
 CSS
+
 body{
     background-image: url(../IMG/Fondo\ PI2020.jpg);
+    background-position: center;
 }
 
 .header{
@@ -45,6 +178,7 @@ body{
     gap: 820px;
     text-decoration-color: white;
     height: 100%;
+    margin-top: 0.5cm;
 }
 
 .logo{
@@ -69,7 +203,7 @@ a{
 
 .search-box{
     position: absolute;
-    top: 16%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%,50%);
     background: white;
@@ -100,6 +234,158 @@ a{
     font-size: 16px;
     transition: 0.4s;
     line-height: 37px;
-    width: 440px;
+    width: 600px;
 }
 
+.carousel{
+    position: absolute;
+    top: 29%;
+    left: 15%;
+    height: 450px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__track-container{
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;  
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+
+.carousel__button--left{
+    left: -50px;
+}
+
+.carousel__button--right{
+    right: -50px;
+}
+
+.carousel__button img{
+    width: 40px;
+    height: 35px;
+}
+
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;
+    margin: 0 8px;
+}
+
+.carousel__indicator.current-slide{
+    background: rgb(146, 146, 146);
+}
+
+.tops{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: transparent;
+    text-align: center;
+    margin: 2cm;
+    margin-top: 19cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.66cm;
+}
+
+
+#gridtrack {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 200px;
+    width: 20%;
+    row-gap: 20px;
+    margin-left: 3.3cm;
+    padding-bottom: 20cm;
+    transform: translateY(-1cm);
+    font-size: 0.75cm;    
+  }
+  
+  #gridtrack > div {
+    border: 1px transparent;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    height: 1.70cm;
+    width: 8.5cm;
+    box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+  }
+
+  #gridartist {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 200px;
+    width: 20%;
+    row-gap: 20px;
+    margin-left: 3.3cm;
+    padding-bottom: 20cm;
+    transform: translateY(-1cm);
+    font-size: 0.75cm;   
+    transform: translate(423px,-1094px); 
+  }
+  
+  #gridartist > div {
+    border: 1px transparent;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    height: 1.70cm;
+    width: 8.5cm;
+    box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+  }
+
+  #gridalbums {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 200px;
+    width: 20%;
+    row-gap: 20px;
+    margin-left: 3.3cm;
+    padding-bottom: 20cm;
+    transform: translateY(-1cm);
+    font-size: 0.75cm; 
+    transform: translate(846px,-2153px);  
+  }
+  
+  #gridalbums > div {
+    border: 1px transparent;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    height: 1.70cm;
+    width: 8.5cm;
+    box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+  }
