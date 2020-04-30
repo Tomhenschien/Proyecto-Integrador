@@ -4,7 +4,7 @@ body{
 }
 
 .header{
-    background-color: rgb(110, 159, 248);
+    background-color: rgb(105, 153, 241);
     color:black;
     display: grid;
     grid-template-columns: 80px 440px;
@@ -12,6 +12,16 @@ body{
     text-decoration-color: white;
     height: 100%;
     margin-top: 0.5cm;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: rgb(238, 238, 238);
 }
 
 .logo{
@@ -26,12 +36,7 @@ body{
     font-size: 5mm; 
     padding-top: 2mm;
     font-style: inherit;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .search-box{
@@ -44,6 +49,7 @@ a{
     border-radius: 40px;
     padding: 10px;
 }
+
 
 .search-btn{
     color: white;
@@ -112,11 +118,16 @@ a{
 }
 
 .carousel__button--left{
-    left: -50px;
+    left: -60px;
+    width: 2.5cm;
+    height: 5cm;
+
 }
 
 .carousel__button--right{
-    right: -50px;
+    right: -60px;
+    width: 2.5cm;
+    height: 5cm;
 }
 
 .carousel__button img{
@@ -152,8 +163,7 @@ a{
     margin-top: 19cm;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.66cm;
-}
-
+ }     
 
 #gridtrack {
     display: grid;
@@ -164,17 +174,31 @@ a{
     margin-left: 3.3cm;
     padding-bottom: 20cm;
     transform: translateY(-1cm);
-    font-size: 0.75cm;    
-  }
+    font-size: 0.6cm;
+    
+
+  } 
   
   #gridtrack > div {
     border: 1px transparent;
     background-color: white;
-    border-radius: 4px;
     text-align: center;
-    height: 1.70cm;
+    border-radius: 4px;
+    height: 1.7cm;
     width: 8.5cm;
     box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+  }
+
+  .foto__artista {
+      height: 70%;
+      width: 1.2cm;
+      position: relative;
+      bottom: -2.5mm;
+      right: -1.6cm;
+      border-radius: 2px;
   }
 
   #gridartist {
@@ -198,6 +222,7 @@ a{
     height: 1.70cm;
     width: 8.5cm;
     box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   #gridalbums {
@@ -221,7 +246,7 @@ a{
     height: 1.70cm;
     width: 8.5cm;
     box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-
 
   @media
