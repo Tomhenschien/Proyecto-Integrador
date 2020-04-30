@@ -34,7 +34,7 @@ a:hover {
     margin: 15px;
     gap: 7px;
     font-size: 5mm; 
-    padding-top: 2mm;
+    padding-top: 5mm;
     font-style: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -248,5 +248,3 @@ a:hover {
     box-shadow: 3px 3px 3px 3px rgb(48, 48, 48);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-
-  @media
