@@ -263,7 +263,7 @@ a:hover {
 }
 
     .grid__container{
-        column-gap: 0.75cm;
+        column-gap: 1.5cm;
     }
 
 @media (max-width: 1050px) {
@@ -305,12 +305,13 @@ a:hover {
     gap: 300px;
     }
     .grid__container{
-        column-gap: 0.5cm;
+        column-gap: 1.5cm;
     }
     .tops{
         font-size: 0.5cm;
 
     }
+
 }
 
 @media (max-width: 840px) {
@@ -354,7 +355,12 @@ a:hover {
     }
      .cajita{
         font-size: 0.45cm;
+        height: 1cm;
     }
+
+    .grid__container{
+        column-gap: 1.5cm;
+        
     
     
 }
