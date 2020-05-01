@@ -115,6 +115,14 @@ position: absolute;
     font-size: xx-large
 }
 
+.cancion{
+    color: black;
+}
+
+.track{
+    color: black;
+}
+
 .albums{
     font-size: larger;
     border: black 2px solid;
