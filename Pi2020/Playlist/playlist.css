@@ -5,7 +5,7 @@ body{
 }
 
 .header{
-    background-color: rgb(105, 153, 241);
+    background-color: #6399FC;
     color:black;
     display: grid;
     grid-template-columns: 80px 440px;
@@ -16,7 +16,7 @@ body{
 }
 
 a {
-    color: black;
+    color:white;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a:hover {
     margin: 15px;
     gap: 7px;
     font-size: 5mm; 
-    padding-top: 5mm;
+    padding-top: 2.5mm;
     font-style: inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
