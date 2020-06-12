@@ -4,7 +4,7 @@ body{
 }
 
 .header{
-    background-color:#6399FC;
+    background-color:#353745;
     display: grid;
     grid-template-columns: 80px 440px;
     gap: 820px;
@@ -18,16 +18,17 @@ body{
 
 a {
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family: calibri;
+    color: #9697a0;
 }
 
 a:hover {
-    color: rgb(233, 233, 233);
+    color: #a9a9ac;;
 }
 
-.logo{
-    padding-left: 4mm;
+.logox{
+    margin-top: 0.2cm;
+    margin-left: 0.4cm;
 }
 
 .nav {
@@ -37,12 +38,11 @@ a:hover {
     gap: 7px;
     font-size: 5mm; 
     padding-top: 2.5mm;
-    font-style: inherit;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: calibri;
     padding-right: 2mm;
     text-decoration: none;
-    color: white;
 }
+
 
 .search-box{
     position: absolute;
@@ -62,7 +62,7 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    background: #6399FC;
+    background: #353745;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,412 +159,242 @@ a:hover {
     background: rgb(146, 146, 146);
 }
 
-
- .grid__container{
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     width: 85%;
-     column-gap: 2.9cm;
-     row-gap: 0.5cm;
-     margin: 0 auto;   
-     margin-top: 19cm;
- }
-
- .tops{
-     background-color: transparent;
-     text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 0.66cm;
- }
- 
-
-.cajita {
-    background-color: white;
-    height: 1.2cm;
-    width: 10cm;
-    border-radius: 4px;
+.container__tracks{
     width: 100%;
-    color: rgb(56, 53, 53);
-    box-shadow: 1.5px 1.5px 1.5px 1.5px;
-    text-align: center;
-    font-size: 0.5cm;
-    text-align: left;
-    padding-left: 3mm;
-    padding-top:5mm;
-}
-
-.foto__artista {
-    height: 100%;
-    width: 1.2cm;
-    float: right;
+    height: 100vh;
+    background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
-    position: relative;
-    right: 0.2cm;
-    bottom: 0.25cm;
-}
-    
-
-  @media (max-width: 1400px) {
-    .header{
-        gap: 780px;
-        
-    }
+    margin-top: 45%;
+    font-family: calibri;
+    border-bottom: 1px solid #b9b9b9;
 }
 
-    @media (max-width: 1350px) {
-            .header{
-            gap: 730px;
-            }
-            .search-btn{
-                position: relative;
-                bottom: 1cm;
-            }
-            #gridtrack {
-                margin-left: 3cm;
-            } 
-            #gridartist {
-                
-                margin-left: 3cm;
-                 
-            }  
-            #gridalbums {
-                margin-left: 2.7cm;
-            }
-
-
-
-    }
-
-    @media (max-width: 1300px) {
-        .header{
-        gap: 680px;
+.container__artists{
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;  
+    border-bottom: 1px solid #b9b9b9;
 }
 
-@media (max-width: 1250px) {
-    .header{
-    gap: 630px;
+.container__albums{
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;  
 }
 
-@media (max-width: 1200px) {
-    .header{
-    gap: 580px;
+.box{
+    width: 350px;
+    height: 450px;
+    background-color: #353745;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    padding-top: 1cm;
 }
 
-@media (max-width: 1150px) {
-    .header{
-    gap: 530px;
+
+.model{
+    height: 350px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-@media (max-width: 1100px) {
-    .header{
-    gap: 480px;
+.marvel{
+    color: #9697a0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
 }
 
-    .grid__container{
-        column-gap: 1.5cm;
-    }
 
-@media (max-width: 1050px) {
-    .header{
-    gap: 430px;
-    }
-    .carousel{
-        position: absolute;
-        top: 29%;
-        left: 15%;
-        height: 370px;
-        width: 70%;
-        margin: 0 auto;
-    }
-    .grid__container{
-        margin-top: 16.5cm;
-    }
-    
-
-
-
+ footer {
+    background-color: #353745;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 1000px) {
-<<<<<<< HEAD
-    .header{
-    gap: 380px;
-    }
-    .nav {
-        font-size: 4mm; 
-        margin: 16px;
-        gap: 3px;
-        
-    }
-
+ul{
+    list-style: none;
+}
+.logo {
+    height: 2cm;
+    width: 6cm;
 }
 
-@media (max-width: 920px) {
-    .header{
-    gap: 300px;
-    }
-    .grid__container{
-        column-gap: 1.5cm;
-    }
-    .tops{
-        font-size: 0.5cm;
-
-    }
-
+.arriba ul{
+    font-family: calibri;
+    margin: 0px;
+    padding: 0px 20px;
 }
 
-@media (max-width: 840px) {
-    .header{
-    gap: 220px;
-    }
-    .carousel{
-        position: absolute;
-        top: 29%;
-        left: 15%;
-        height: 300px;
-        width: 70%;
-        margin: 0 auto;
-    }
-    .search-txt{
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding-left: 3mm;
-        color:gray;
-        font-size: 16px;
-        transition: 0.4s;
-        line-height: 37px;
-        width: 450px;
-    }
-    .grid__container{
-        margin-top: 14.5cm;
-    }
+.arriba h1{
+    color: #9697a0;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.arriba ul li a{
+    font-size: 16px;
+    color: #575a70;
+}
+
+.arriba ul li p{
+    font-size: 14px;
+    color: #575a70;
+    line-height: 10px;
+}
+
+.arriba{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0px;
+    margin: 5px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.arriba{
+    border-bottom: 1px solid #575a70;
     
 }
 
-@media (max-width: 760px) {
-    .header{
-    gap: 140px;
-    }
-    .foto__artista{
-        position: relative;
-        bottom: 3cm;
-        
-    }
-     .cajita{
-        font-size: 0.45cm;
-        height: 1cm;
-    }
-
-    .grid__container{
-        column-gap: 1.5cm;
-        
-    
-    
+.arriba a:hover{
+    color: grey;
 }
-
-@media (max-width: 760px) and (min-width: 681px) {
-    .foto__artista{
-        position: relative;
-        bottom: 0.25cm;
-
-    }
-    .cajita{
-        font-size: 0.45cm;
-    }
-    
-    
-}
-
-@media (max-width: 680px) {
-    .header{
-    gap: 140px;
-    }
-    .nav{
-        font-size: 3.75mm;
-        margin-top: 19px;
-    }
-    .carousel{
-        position: absolute;
-        top: 29%;
-        left: 15%;
-        height: 200px;
-        width: 70%;
-        margin: 0 auto;
-    }    
-    .search-txt{
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding-left: 3mm;
-        color:gray;
-        font-size: 16px;
-        transition: 0.4s;
-        line-height: 37px;
-        width: 350px;
-    }
-    .grid__container{
-        margin-top: 12.5cm;
-
-    }
-
-    .foto__artista{
-        position: relative;
-        bottom: 0.25cm;
-
-    }
-
-    .cajita{
-        font-size: 0.45cm;
-    }
-    
-
-  .header{
-  gap: 380px;
-  }
-  .nav {
-      font-size: 4mm; 
-      margin: 16px;
-      gap: 3px;
-      
-  }
-
-}
-
-@media (max-width: 920px) {
-  .header{
-  gap: 300px;
-  }
-  .grid__container{
-    column-gap: 1.5cm;
-  }
-  .tops{
-      font-size: 0.5cm;
-
-  }
-}
-
-@media (max-width: 840px) {
-  .header{
-  gap: 220px;
-  }
-  .carousel{
-      position: absolute;
-      top: 29%;
-      left: 15%;
-      height: 300px;
-      width: 70%;
-      margin: 0 auto;
-  }
-  .search-txt{
-      border: none;
-      background: none;
-      outline: none;
-      float: left;
-      padding-left: 3mm;
-      color:gray;
-      font-size: 16px;
-      transition: 0.4s;
-      line-height: 37px;
-      width: 450px;
-  }
-  .grid__container{
-      margin-top: 14.5cm;
-  }
-
-  .cajita{
-    font-size: 0.45cm;
-}
-  
-}
-
-@media (max-width: 760px) {
-  .header{
-  gap: 140px;
-  }
-
-  .foto__artista{
-      position: relative;
-      bottom: 3cm;
-      
-  }
-   .cajita{
-      font-size: 0.45cm;
-      height: 1cm;
-  }
-  
-  .grid__container{
-    column-gap: 1.5cm;
    
+.abajo h1{
+    color: #9697a0;
+    font-size: 20px;
+    font-family: calibri;
 }
 
-@media (max-width: 760px) and (min-width: 681px) {
-  .foto__artista{
-      height: 1.1cm;
-      width: 1.1cm;
-      position: relative;
-      bottom: 0.28cm;
 
-  }
-  .cajita{
-      font-size: 0.45cm;
-  }
-  
-  
+.abajo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 3% 0px;
+    margin: 5px;
+    width: 80%;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 680px) {
-  .header{
-  gap: 120px;
-  }
-  .nav{
-      font-size: 3.75mm;
-      margin-top: 19px;
-      padding-top: 2mm;
-      padding-right: 5mm;
-  }
-  .carousel{
-      position: absolute;
-      top: 29%;
-      left: 15%;
-      height: 200px;
-      width: 70%;
-      margin: 0 auto;
-  }    
-  .search-txt{
-      border: none;
-      background: none;
-      outline: none;
-      float: left;
-      padding-left: 3mm;
-      color:gray;
-      font-size: 16px;
-      transition: 0.4s;
-      line-height: 37px;
-      width: 350px;
-  }
-  .grid__container{
-      margin-top: 12.5cm;
+.logo{
+    height: 50px;
+    width: 170px;
+}
 
-  }
-  .foto__artista{
-    height: 1.1cm;
-    width: 1.1cm;
-    position: relative;
-    bottom: 0.3cm;
-    right: 0.2cm;
-  }
-  }
+.social-icons a{
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+    background-color: #424356;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .cajita{
-      font-size: 0.45cm;
-  }
-  
+.social-icons{
+    display: flex;
+}
 
-  }
+.social-icons i{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.search input{
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.copyright{
+    font-family: calibri;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.Integrantes{
+    font-family: calibri;
+    font-size: 25px;
+    color: #b3b3b3;
+}
+.up-section ul li a:hover, .dwn-section ul li a:hover{
+    color: #9697a0;
+}
+
+.social-icons a:hover{
+    background-color: #353745;
+    transition: all ease 0.5s;
+}
+
+.social-icons a:hover i{
+    color: #424356;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 3% 0px;
+    margin: 5px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 1024px){
+    .search{
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .search h1{
+        margin: 20px;
+    }
+}
+
+@media(max-width: 720px){
+    .arriba, .abajo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .arriba ul h1, .abajo ul h1{
+        font-size: 25px;
+    }
+    .arriba ul li, .abajo ul li{
+        text-align: center;
+        margin: 10px;
+    }
+    .search{
+        display: block;
+    }
+}
+
+
+
+.
+
 
