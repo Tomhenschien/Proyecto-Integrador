@@ -159,54 +159,29 @@ a:hover {
     background: rgb(146, 146, 146);
 }
 
-.container__tracks{
-    width: 100%;
-    height: 100vh;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45%;
-    font-family: calibri;
-    border-bottom: 1px solid #b9b9b9;
-}
 
-.container__artists{
+.container{
     width: 100%;
     height: 100vh;
-    background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: calibri;  
-    border-bottom: 1px solid #b9b9b9;
-}
-
-.container__albums{
-    width: 100%;
-    height: 100vh;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: calibri;  
+    margin-top: 50%;
 }
 
 .box{
     width: 350px;
-    height: 450px;
+    height: 610px;
     background-color: #353745;
     border-radius: 10px;
-    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    box-shadow: 2px 10px 12px rgba(0,0,0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     margin: 20px 10px;
-    padding-top: 1cm;
 }
-
 
 .model{
     height: 350px;
@@ -214,13 +189,44 @@ a:hover {
     max-width: 100%;
 }
 
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.details p{
+    font-family: calibri;
+    font-weight: bold;
+    color: #9697a0;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .marvel{
     color: #9697a0;
     font-weight: bold;
     letter-spacing: 2px;
+    font-family: calibri;
     font-size: 25px;
 }
 
+.logos{
+    height: 60px;
+}
+
+.box:hover{
+    background-color: #2a2b35;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.box:hover .marvel{
+    color: #7f8088;
+    transition: all ease 0.5s;
+}
 
  footer {
     background-color: #353745;
@@ -391,10 +397,21 @@ ul{
     .search{
         display: block;
     }
+    .box{
+        width: 94%;
+        height: 500px;
+    }
+    .model{
+        height:250px
+    }
+    .details p{
+        font-size: 16px;
+        width: 250px;
+    }
 }
 
 
 
-.
+
 
 
