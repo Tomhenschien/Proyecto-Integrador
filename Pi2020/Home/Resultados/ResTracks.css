@@ -1,0 +1,49 @@
+body{
+    background-image: url(../IMG/Fondo\ PI2020.jpg);
+    background-position: center;
+}
+
+.header{
+    background-color:#353745;
+    display: grid;
+    grid-template-columns: 80px 440px;
+    gap: 820px;
+    text-decoration-color: white;
+    height: 100%;
+    margin-top: 0.5cm;
+    width: 100%;
+    font-family: calibri;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9697a0;
+}
+
+a:hover {
+    color: #a9a9ac;;
+}
+
+.logox{
+    margin-top: 0.2cm;
+    margin-left: 0.4cm;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 200px;
+    margin: 15px;
+    gap: 7px;
+    font-size: 5mm; 
+    padding-top: 2.5mm;
+    font-family: calibri;
+    padding-right: 2mm;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    color: #cfcfd1;
+}
