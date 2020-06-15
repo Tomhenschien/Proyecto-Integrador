@@ -163,8 +163,14 @@ a:hover {
     font-family: Calibri;
     font-size: 29px;
     color:  #d3d4dd;
-    padding-left: 4%;
     height: 10%;
+}
+
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding-left: 4%;
+    column-gap: 0;
 }
 
 .top{
@@ -172,23 +178,25 @@ a:hover {
     margin-top: 4%;
 }
 .slider{
-    margin-top: 50%;
+    margin-top: 55%;
 }
 
 .search-text{
     border-radius: 35px;
     background-color: #353745;
     height: 40px;
-    width: 300px;
+    width: 500px;
     color: #9697a0;
     font-size: 16px;
     padding-left: 3mm;
+    align-items: center;
+    border-style: none;
     
 }
 
 .search-button{
     position: absolute;
-    transform: translate(-140%, 15%);
+    transform: translate(-160%, 65%);
 }
 
 .container{
