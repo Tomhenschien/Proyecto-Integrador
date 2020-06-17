@@ -6,6 +6,8 @@ console.log(searchParams);
 
 let search = searchParams.get("search"); 
 console.log(search);
+
+
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url =  proxy + "https://api.deezer.com/search/artist?q=" + search;
 
@@ -21,13 +23,9 @@ fetch(url)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + resultado.name+ '</li>'
-        });
-       
-        
-        
+            lista.innerHTML += '<li>' + resultado.name + '</li>'
+        }) 
     })
     .catch(function(error){
         console.log(error);
-        
-    });
+    })

@@ -7,10 +7,10 @@ body{
     background-color:#353745;
     display: grid;
     grid-template-columns: 80px 440px;
-    gap: 820px;
+    gap: 60%;
     text-decoration-color: white;
     height: 100%;
-    margin-top: 0.5cm;
+    margin-top: 1%;
     width: 100%;
     font-family: calibri;
 }
@@ -27,17 +27,17 @@ a:hover {
 }
 
 .logox{
-    margin-top: 0.2cm;
-    margin-left: 0.4cm;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .nav {
     display: grid;
     grid-template-columns: 100px 100px 100px 200px;
-    margin: 15px;
-    gap: 7px;
+    margin: 3%;
+    gap: 3%;
     font-size: 5mm; 
-    padding-top: 2.5mm;
+    padding-top: 2%;
     font-family: calibri;
     padding-right: 2mm;
     text-decoration: none;
@@ -46,7 +46,7 @@ a:hover {
 
 .search-box{
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%,50%);
     background: white;
@@ -73,7 +73,7 @@ a:hover {
     background: none;
     outline: none;
     float: left;
-    padding-left: 3mm;
+    padding-left: 3px;
     color:gray;
     font-size: 16px;
     transition: 0.4s;
@@ -159,11 +159,8 @@ a:hover {
     background: rgb(146, 146, 146);
 }
 
-.tops{
-    font-family: Calibri;
-    font-size: 29px;
-    color:  #d3d4dd;
-    height: 10%;
+.slider{
+    margin-top: -50%;
 }
 
 .seccion{
@@ -173,10 +170,13 @@ a:hover {
     column-gap: 0;
 }
 
-.top{
-    padding-left: 3%;
-    margin-top: 4%;
+.tops{
+    font-family: Calibri;
+    font-size: 29px;
+    color:  #d3d4dd;
+    height: 10%;
 }
+
 .slider{
     margin-top: 55%;
 }
@@ -265,6 +265,22 @@ a:hover {
 .box:hover .marvel{
     color: #7f8088;
     transition: all ease 0.5s;
+}
+
+
+
+.generos {
+    color: #bbbcc4;
+    font-family: calibri;
+    text-align: center;
+}
+
+.h2{
+
+}
+
+.listado{
+    font-size: 20px;
 }
 
  footer {
@@ -436,6 +452,10 @@ ul{
     .search{
         display: block;
     }
+
+}
+
+@media(max-width: 720px){
     .box{
         width: 94%;
         height: 500px;
@@ -448,7 +468,6 @@ ul{
         width: 250px;
     }
 }
-
 
 
 

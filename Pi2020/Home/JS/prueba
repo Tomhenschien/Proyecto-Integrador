@@ -1,0 +1,47 @@
+let proxy = 'https://cors-anywhere.herokuapp.com/';
+let url = proxy + 'https://api.deezer.com/chart/0/tracks';
+
+
+fetch(url)
+.then(function(response){
+    return response.json()
+})
+
+.then(function(informacion){
+    console.log(informacion);
+    let fotos = informacion.data;
+    let bandas = document.querySelector('item-a');
+    let albums = '';
+    for(let i=0; i<10; i++){
+        albums += '<div class="box">';
+        albums += '<img class="model" src="' + fotos[i].artist.picture_medium + '" alt="' + fotos[i].title + '">';
+        albums += '</div>';
+    }
+    bandas.innerHTML = albums;
+})
+
+.catch(function(error){
+    console.log(error);
+})
+
+let proxy = 'https://cors-anywhere.herokuapp.com/';
+let link = proxy + 'https://api.deezer.com/chart/0/tracks';
+
+
+fetch(link)
+.then(function(response){
+    return response.json()
+})
+
+.then(function(info){
+    console.log(info);
+    let tracks = info.data;
+    let lista = document.querySelector(".box");
+    for(var i=0; i<10; i++) {
+        lista.innerHTML += '<p><a href="tracks.html?id=' + tracks[i].id + '"' + 'class="box">' + tracks[i].title + '</a></p>';
+    }
+})
+
+.catch(function(error){
+    console.log(error);
+})
