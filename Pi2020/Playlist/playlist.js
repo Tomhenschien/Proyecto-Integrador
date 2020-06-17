@@ -5,7 +5,8 @@ let playlistWrapper = document.querySelector('.playlistWrapper');
 console.log(recuperoStorage);
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [];
-    playlistWrapper.innerHTML += '<li> No hay canciones en tu playlist </li>'
+
+    playlistWrapper.innerHTML += '<li> No hay canciones en tu playlist </li>';
     console.log(playlistWrapper);
     
 } else {
@@ -30,4 +31,4 @@ function buscarYMostrarTrack(idTrack){
             console.log(errors);
             
         })
-};
+    }
