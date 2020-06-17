@@ -81,6 +81,12 @@ a:hover {
     width: 600px;
 }
 
+.button{
+   border: none;
+   background: none; 
+}
+
+
 .logo{
     padding-left: 4mm;
 }
@@ -359,8 +365,8 @@ a:hover {
                 @media (max-width: 760px) {
                     .header{
                     gap: 140px;
-                    }
+                }
                     .foto__artista{
                         position: relative;
-                        bottom: 3cm;}
-                        
+                        bottom: 3cm;
+                    }
