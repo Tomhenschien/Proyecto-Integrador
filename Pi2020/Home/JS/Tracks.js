@@ -1,28 +1,49 @@
-  
-// Obtener tops para homepage
-
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url = proxy + "https://api.deezer.com/chart/0/tracks";
+let url = proxy + 'https://api.deezer.com/chart/0/tracks';
+
 
 fetch(url)
-    .then(function(response){
-        return response.json();
+.then(function(response){
+    return response.json()
+})
+
+.then(function(informacion){
+    console.log(informacion);
+    let fotos = informacion.data;
+    let bandas = document.querySelector('item-a');
+    let cover = '';
+    forEach(let i=0; i<10; i++){
+        cover += '<div class="box">';
+        cover += '<img class="model" src="' + fotos[i].artist.picture_medium + '" alt="' + fotos[i].title + '">';
+        cover += '</div>';
     })
-    .then(function(datos){
-        console.log(datos);
-        
-        let marvel = document.querySelector('.marvel');
-        let resultados = datos.data;
+    bandas.innerHTML = cover;
+})
 
+.catch(function(error){
+    console.log(error);
+})
 
-        resultados.forEach(function(track){
-            marvel.innerHTML = '<p>' + resultados.title + '</p>' 
-        })
+let url = proxy + 'https://api.deezer.com/chart/0/tracks';
 
+fetch(url)
+.then(function(response){
+    return response.json()
+})
+
+.then(function(informacion){
+    console.log(informacion);
+    let fotos = informacion.data;
+    let bandas = document.querySelector('item-a');
+    let cover = '';
+    forEach(let i=0; i<10; i++){
+        cover += '<div class="box">';
+        cover += '<img class="model" src="' + fotos[i].artist.picture_medium + '" alt="' + fotos[i].title + '">';
+        cover += '</div>';
     })
-    .catch(function(error){
-        console.log(error);
-        
-    })
+    bandas.innerHTML = cover;
+})
 
-
+.catch(function(error){
+    console.log(error);
+})

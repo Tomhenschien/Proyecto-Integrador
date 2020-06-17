@@ -6,6 +6,8 @@ console.log(searchParams);
 
 let search = searchParams.get("search"); 
 console.log(search);
+
+
 let proxy = 'https://cors-anywhere.herokuapp.com/';
 let url =  proxy + "https://api.deezer.com/search?q=" + search;
 
@@ -29,5 +31,4 @@ fetch(url)
     })
     .catch(function(error){
         console.log(error);
-        
-    });
+    })
