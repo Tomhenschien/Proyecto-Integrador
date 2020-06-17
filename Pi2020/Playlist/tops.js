@@ -11,16 +11,13 @@ fetch(url)
     .then(function(datos){
         console.log(datos);
         
-        let artist = document.querySelector('.artists');
-        let album = document.querySelector('.album');
+        let artists = document.querySelector('.artists');
+        let albums = document.querySelector('.albums');
         let tracks = document.querySelector('.tracks');
 
         let resultadoArtista = datos.artists.data;
-
-        let resultadoAlbum = datos.album.data;
-
-        let resultadoTrack = datos.track.data;
-
+        let resultadoAlbums = datos.albums.data;
+        let resultadoTrack = datos.tracks.data;     
 
 
         resultadoTrack.forEach(function(track){
@@ -28,11 +25,12 @@ fetch(url)
         })
 
         resultadoArtista.forEach(function(artist){
-            artist.innerHTML += '<li>' + '<a href="track.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
+            artists.innerHTML += '<li>' + '<a href="track.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
+            
         })
 
         resultadoAlbums.forEach(function(album){
-            album.innerHTML += '<li>' + '<a href="track.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
+            albums.innerHTML += '<li>' + '<a href="track.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
         })
 
     })
