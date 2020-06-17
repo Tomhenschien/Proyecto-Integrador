@@ -14,9 +14,14 @@ fetch(url)
         let artist = document.querySelector('.artists');
         let album = document.querySelector('.album');
         let tracks = document.querySelector('.tracks');
+
         let resultadoArtista = datos.artists.data;
+
         let resultadoAlbum = datos.album.data;
+
         let resultadoTrack = datos.track.data;
+
+
 
         resultadoTrack.forEach(function(track){
             tracks.innerHTML += '<li>' + '<a href="track.html?id='+ track.id+ '">'+ track.title + '</a></li>' 
