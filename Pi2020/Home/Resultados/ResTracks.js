@@ -9,7 +9,7 @@ console.log(search);
 
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url =  proxy + "https://api.deezer.com/search/artist?q=" + search;
+let url =  proxy + "https://api.deezer.com/search?q=" + search;
 
 
 fetch(url)
@@ -23,8 +23,11 @@ fetch(url)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + resultado.name + '</li>'
-        }) 
+            lista.innerHTML += '<li>' + resultado.title+ '</li>'
+        });
+       
+        
+        
     })
     .catch(function(error){
         console.log(error);
