@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>MUSIFY</title>
     <link rel="stylesheet" href="ResTracks.css">
+    <link rel="stylesheet" href="contenedor.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js"
     crossorigin="anonymous"></script>
 </head>
@@ -23,12 +24,25 @@
         </nav>
     </header>
 
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            var conteniente = document.getElementById('contenedor_carga');
+
+
+            conteniente.style.visibility = 'hidden';
+            conteniente.style.opacity = '0';
+        }
+    </script>
+
     <h1>Top results for MUSIFY'S hottest tracks</h1>
     <ul class="lista">
 
     </ul>
 
-    <p>...Loading</p>
 
     <footer>
     
@@ -89,5 +103,6 @@
         </footer>
 
     <script src="ResTracks.js"></script>
+
 </body>
 </html>

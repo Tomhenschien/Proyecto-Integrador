@@ -43,10 +43,26 @@ a:hover {
     text-decoration: none;
 }
 
-ul{
-    list-style-type: none;
-    color: #cfcfd1;
+
+h1{
+    color: #dbdbe0;
+    font-family: calibri;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 2%;
 }
+
+ul{
+    list-style: none;
+    color: #a9a9ac;
+    font-family: calibri;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+
 
 footer {
     background-color: #353745;
@@ -54,27 +70,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h1{
-    color: #dbdbe0;
-    font-family: calibri;
-    text-align: left;
-    padding-left: 2%;
-}
-
-ul{
-    list-style: none;
-    color: #a9a9ac;
-    font-family: calibri;
-    font-size: 25px;
-    text-align: left;
-}
-
-p{
-    color: #dbdbe0;
-    font-family: calibri;
-    text-align: left;
+    margin-top: 20%;
 }
 
 .logo {
