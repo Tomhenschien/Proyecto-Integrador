@@ -23,14 +23,14 @@
         </div>
         <nav class="nav">
             <a href="../Home/indexPI2020.html">Home</a>
-            <a href="">Genres</a>
+            <a href="../Genero/Genero.html">Genres</a>
             <a href="../Playlist/playlist.html">Playlists</a>
             <a href="">Login Register</a>
         </nav>
     </header>
 
     <div class="search-box">
-        <form action="./Resultados/ResTracks.html" method="GET">
+        <form action="../Resultados/ResGral.html" method="GET">
           <input class="search-txt" type="text" name="search" placeholder="Discover MUSIFY">
           <button type="submit" class="search-btn">
             <i class="fa fa-search-plus"></i>         
@@ -40,7 +40,7 @@
 
       <div class="carousel">
         <button class="carousel__button carousel__button--left">
-            <img src="IMG/leeft-slider.png" alt="">
+            <img src="./IMG/leeft-slider.png" alt="">
         </button>
             <div class="carousel__track-container">
                  <ul class="carousel__track">
@@ -68,7 +68,7 @@
             TOP TRACKS
     </div>
     <div>
-        <form action="./Resultados/ResTracks.html" method="GET">
+        <form action="../Resultados/ResTracks.html" method="GET">
             <input class="search-text" type="text" name="search" placeholder="Discover MUSIFY'S Hottest Tracks">
             <button type="submit" class="search-button">
               <i class="fa fa-search-plus"></i>         
@@ -156,13 +156,26 @@
 
 </div>    
 
-<div class="generos">
-    <h2 class="h2">MUSIFY'S Top Trending Genres</h2>
-    <ul class="listado">
+<div class="contenedorr">
+    <section class ="tracks">
+        <h2 class="topazo">TOP TRACKS</h2>
+        <ul class="trackss">
+        </ul>
+    </section>
 
-    </ul>
-</div>
-    
+    <section class="tracks">
+        <h2 class="topazo">TOP ARTISTS</h2>
+        <ul class="artists">
+            <img src="" alt="">
+        </ul>
+    </section>
+
+    <section class="tracks">
+        <h2 class="topazo">TOP ALBUMS</h2>
+        <ul class="albums">
+        </ul>
+    </section>     
+</div>   
     
 
 <footer>
@@ -224,6 +237,7 @@
 </footer>
 <script src="../Home/JS/Slider.js"></script>
 <script src="../Home/JS/Tracks.js"></script>
-<script src="../Home/JS/Generos.js"></script>
+<script src="../Home/JS/Home.js"></script>
+
 </body>
 </html>
