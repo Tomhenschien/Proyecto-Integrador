@@ -21,16 +21,16 @@ fetch(url)
 
 
         resultadosTracks.forEach(function(track){
-            tracks.innerHTML += '<li>' + '<a href="track.html?id='+ track.id+ '">'+ track.title + '</a></li>' 
+            tracks.innerHTML += '<li>' + '<a href="Detalle.html?id='+ track.id+ '">'+ track.title + '</a></li>' 
         })
 
         resultadosArtists.forEach(function(artist){
-            artists.innerHTML += '<li>' + '<a href="track.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
+            artists.innerHTML += '<li>' + '<a href="Detalle.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
             
         })
 
         resultadosAlbums.forEach(function(album){
-            albums.innerHTML += '<li>' + '<a href="track.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
+            albums.innerHTML += '<li>' + '<a href="Detalle.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
         })
 
     })
@@ -38,5 +38,4 @@ fetch(url)
         console.log(error);
         
     })
-
 

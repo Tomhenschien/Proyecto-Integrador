@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>MUSIFY</title>
     <link rel="stylesheet" href="genero.css">
+    <link rel="stylesheet" href="../Resultados/contenedor.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js"
     crossorigin="anonymous"></script>
 </head>
@@ -22,6 +23,21 @@
             <a href="">Login Register</a>
         </nav>
     </header>
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            var conteniente = document.getElementById('contenedor_carga');
+
+
+            conteniente.style.visibility = 'hidden';
+            conteniente.style.opacity = '0';
+        }
+    </script>
+
 
     <div class="generos">
         <h1 class="h1">MUSIFY'S Top Trending Genres</h1>
