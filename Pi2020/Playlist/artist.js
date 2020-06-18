@@ -37,7 +37,7 @@ fetch(urlt)
     console.log(ranking);
     
     respuesta.forEach(function(track) {
-        ranking.innerHTML += "<li class='cancion'><a href='dTrack.html?id="+track.id+"'>"+track.title+"</a></li>";
+        ranking.innerHTML += "<li class='cancion'><a href='./track.html?id="+track.id+"'>"+track.title+"</a></li>";
     })
 })
 
@@ -54,7 +54,7 @@ fetch(urla)
     console.log();
     
     respuesta.forEach(function(albumes){
-        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover_medium+"' alt='foto'><br><h7>"+albumes.title+"</h7></a></div>";
+        albumcitos.innerHTML += "<div class='albumx'><a href='./album.html?id="+albumes.id+"'><img src='"+albumes.cover_medium+"' alt='foto'><br><h7>"+albumes.title+"</h7></a></div>";
         
     })
 })

@@ -21,16 +21,16 @@ fetch(url)
 
 
         resultadosTracks.forEach(function(track){
-            tracks.innerHTML += '<li>' + '<a href="Detalle.html?id='+ track.id+ '">'+ track.title + '</a></li>' 
+            tracks.innerHTML += '<li>' + '<img src="' + track.album.cover_small + '">' + '<a href="../Playlist/track.html?id='+ track.id+ '">'+ track.title + '</a></li>' 
         })
 
         resultadosArtists.forEach(function(artist){
-            artists.innerHTML += '<li>' + '<a href="Detalle.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
+            artists.innerHTML += '<li>' + '<img src="' + artist.picture_small + '">' + '<a href="../Playlist/artist.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
             
         })
 
         resultadosAlbums.forEach(function(album){
-            albums.innerHTML += '<li>' + '<a href="Detalle.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
+            albums.innerHTML += '<li>' + '<img src="' + album.cover_small + '">' + '<a href="../Playlist/album.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
         })
 
     })
