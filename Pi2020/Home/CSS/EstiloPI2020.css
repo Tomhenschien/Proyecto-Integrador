@@ -81,87 +81,75 @@ a:hover {
     width: 600px;
 }
 
-.carousel{
-    position: absolute;
-    top: 29%;
-    left: 15%;
-    height: 450px;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.carousel__image {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel__track-container{
-    background: lightgreen;
-    height: 100%;
-    position: relative;
-}
-
-.carousel__track{
-    padding: 0;
-    margin: 0;
-    list-style: none;  
-}
-
-.carousel__slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button{
+.slidershow{
+    width: 85%;
+    height: 65%;
+    overflow: hidden;
+    margin-top: 9%;
+    padding-bottom: 4%;
+  }
+  .middle{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-}
-
-.carousel__button--left{
-    left: -60px;
-    width: 2.5cm;
-    height: 5cm;
-
-}
-
-.carousel__button--right{
-    right: -60px;
-    width: 2.5cm;
-    height: 5cm;
-}
-
-.carousel__button img{
-    width: 40px;
-    height: 35px;
-}
-
-.carousel__nav{
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+  
 
-.carousel__indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: white;
-    margin: 0 8px;
-}
-
-.carousel__indicator.current-slide{
-    background: rgb(146, 146, 146);
-}
-
-.slider{
-    margin-top: -50%;
-}
 
 .seccion{
     display: grid;

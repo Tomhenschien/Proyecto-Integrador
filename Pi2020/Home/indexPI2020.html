@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSIFY</title>
     <link rel="stylesheet" href="CSS/EstiloPI2020.css">
     <link rel="stylesheet" type="text/css" href="../Home/CSS/lightslider.css">
@@ -38,29 +38,24 @@
         </form>   
       </div>
 
-      <div class="carousel">
-        <button class="carousel__button carousel__button--left">
-            <img src="./IMG/leeft-slider.png" alt="">
-        </button>
-            <div class="carousel__track-container">
-                 <ul class="carousel__track">
-                     <li class="carousel__slide">
-                        <img class="carousel__image" src="IMG/Slide 2.png" alt="Slide 1">
-                     </li>
-                     <li class="carousel__slide">
-                        <img class="carousel__image" src="IMG/Slide 1.png" alt="Slide 2">
-                     </li>
-                 </ul>
-            </div>
-        <button class="carousel__button carousel__button--right">
-            <img src="IMG/riight-slider.png" alt="">
-        </button>
-        <div class="carousel__nav">
-            <button class="carousel__indicator current-slide"></button>
-            <button class="carousel__indicator"></button>
-        </div>
-    </div>
+      <div class="slidershow middle">
 
+        <div class="slides">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <div class="slide s1">
+            <img src="../Home/IMG/Slide 1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="../Home/IMG/Slide 2.png" alt="">
+          </div>
+        </div>
+  
+        <div class="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+        </div>
+      </div>
 
 <div class="slider">
     <div class="seccion">
