@@ -25,12 +25,12 @@ fetch(url)
         })
 
         resultadoArtista.forEach(function(artist){
-            artists.innerHTML += '<li>' + '<a href="track.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
+            artists.innerHTML += '<li>' + '<a href="artist.html?id='+ artist.id+ '">'+ artist.name + '</a></li>' 
             
         })
 
         resultadoAlbums.forEach(function(album){
-            albums.innerHTML += '<li>' + '<a href="track.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
+            albums.innerHTML += '<li>' + '<a href="album.html?id='+ album.id+ '">'+ album.title + '</a></li>' 
         })
 
     })
