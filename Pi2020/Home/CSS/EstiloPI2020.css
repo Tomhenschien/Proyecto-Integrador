@@ -272,25 +272,6 @@ a:hover {
 
 
 
-.generos {
-    color: #bbbcc4;
-    font-family: calibri;
-    margin: 0;
-    text-align: center;
-}
-
-.h2{
-    text-align: center;
-}
-
-.listado{
-    font-size: 20px;
-    background-color: #353745;
-    border-radius: 20px;
-    box-shadow: 2px 10px 12px rgba(0,0,0, 0.5);
-    width: 30%;
-}
-
  footer {
     background-color: #353745;
     box-sizing: border-box;

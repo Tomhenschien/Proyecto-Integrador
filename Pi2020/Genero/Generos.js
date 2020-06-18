@@ -12,11 +12,10 @@ fetch(link)
     let genero = info.data;
     let lista = document.querySelector(".listado");
     for(var i=1; i<10; i++) {
-        lista.innerHTML += '<ul>' + genero[i].name + '</ul>';
+        lista.innerHTML += '<ul>'+ '<a href="./Detalle.html?id='+ genero[i].id+ '">'+ genero[i].name + '</a>'+ '</ul>';
     }
 })
 
 .catch(function(error){
     console.log(error);
 })
-
