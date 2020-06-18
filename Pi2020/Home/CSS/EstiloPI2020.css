@@ -197,6 +197,9 @@ a:hover {
 .search-button{
     position: absolute;
     transform: translate(-160%, 65%);
+    background-color:  #353745;
+    color: grey;
+    border-color: transparent;
 }
 
 .container{
@@ -285,7 +288,7 @@ a:hover {
     background-color: #353745;
     border-radius: 20px;
     box-shadow: 2px 10px 12px rgba(0,0,0, 0.5);
-
+    width: 30%;
 }
 
  footer {
