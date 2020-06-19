@@ -20,8 +20,7 @@ fetch(url)
     tipo.style.textTransform = "uppercase";
     let seguidoresA = document.querySelector(".seguidoresA");
     seguidoresA.innerHTML = "<h4>Seguidores: "+data.nb_fan+"</h4>";
-    let fondo = document.querySelector(".main");
-    fondo.style.backgroundImage = "url("+data.picture_xl+ ")";
+
 })
 let urlt =proxi+ "https://api.deezer.com/artist/"+idartist+"/top?limit=5";
 console.log(urlt);
@@ -49,12 +48,5 @@ fetch(urla)
 })
 .then(function(datos){
     let respuesta = datos.data
-    console.log(respuesta);
-    let albumcitos = document.querySelector(".albumes");
-    console.log();
-    
-    respuesta.forEach(function(albumes){
-        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover_medium+"' alt='foto'><br><h7>"+albumes.title+"</h7></a></div>";
-        
+    console.log(respuesta);    
     })
-})
