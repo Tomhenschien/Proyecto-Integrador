@@ -1,12 +1,20 @@
 *{
     box-sizing: border-box;
 }
-
+li{
+    list-style-type: none;
+}
 body{
     background-image: url(../IMG/Fondo\ PI2020.jpg);
     background-position: center;
 }
-
+.not-home{
+    width: 70%;
+    margin: 30px auto 40px;
+}
+.not-home.playlist{
+    min-height: 400px;
+}
 .header{
     background-color:#353745;
     display: grid;
@@ -24,10 +32,6 @@ a {
 
 a:hover {
     color: #a9a9ac;;
-}
-
-.logox{
-    
 }
 
 .nav {
@@ -317,10 +321,6 @@ a:hover {
 ul{
     list-style: none;
 }
-.logo {
-    height: 2cm;
-    width: 6cm;
-}
 
 .arriba ul{
     font-family: calibri;
@@ -380,10 +380,10 @@ ul{
     flex-wrap: wrap;
 }
 
-.logo{
+/* .logo{
     height: 50px;
     width: 170px;
-}
+} */
 
 .social-icons a{
     width: 35px;
@@ -460,6 +460,10 @@ ul{
 }
 
 @media(max-width: 720px){
+    .not-home{
+        width: 100%;
+        padding: 0 20px;
+    }
     .arriba, .abajo{
         flex-direction: column;
         align-items: center;
@@ -476,9 +480,6 @@ ul{
         display: block;
     }
 
-}
-
-@media(max-width: 720px){
     .contenedorr {
         grid-template-columns: 1fr;
         grid-row-gap: 50px;
