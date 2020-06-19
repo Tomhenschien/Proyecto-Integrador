@@ -151,7 +151,13 @@ a:hover {
   #r5:checked ~ .s1{
     margin-left: -80%;
   }
-  
+
+.generos ul {
+    padding: 0;
+}
+.generos li{
+    font-size: 22px;
+}
 
 
 .seccion{

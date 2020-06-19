@@ -23,7 +23,7 @@ fetch(url)
         let resultados = datos.data;
         
         resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + '<a href="../Playlist/track.html?id='+ resultado.id+ '">'+ resultado.title + '</a></li>';
+            lista.innerHTML += '<li>' + '<img src="' + resultado.album.cover_small + '">' + '<a href="../Playlist/track.html?id='+ resultado.id+ '">'+ resultado.title + '</a></li>';
         })
        
         
@@ -48,7 +48,7 @@ fetch(URL)
         let resultados = datos.data;
         
         resultados.forEach(function(resultados){
-            lista.innerHTML += '<li>' + '<a href="../Playlist/artist.html?id='+ resultados.id+ '">'+ resultados.name + '</a></li>';
+            lista.innerHTML += '<li>' + '<img src="' + resultados.picture_small + '">' + '<a href="../Playlist/artist.html?id='+ resultados.id+ '">'+ resultados.name + '</a></li>';
         })
        
         
@@ -72,7 +72,7 @@ fetch(linkk)
         let resultados = datos.data;
         
         resultados.forEach(function(resultadoss){
-            lista.innerHTML += '<li>' + '<a href="../Playlist/album.html?id='+ resultadoss.id+ '">'+ resultadoss.title + '</a></li>';
+            lista.innerHTML += '<li>' + '<img src="' + resultadoss.cover_small + '">' + '<a href="../Playlist/album.html?id='+ resultadoss.id+ '">'+ resultadoss.title + '</a></li>';
         })
        
         
