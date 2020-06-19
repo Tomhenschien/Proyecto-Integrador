@@ -9,7 +9,7 @@ console.log(search);
 
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url =  proxy + "https://api.deezer.com/search/track?q=" + search;
+let url =  proxy + "https://api.deezer.com/search?q=" + search;
 
 
 fetch(url)
@@ -22,8 +22,8 @@ fetch(url)
         let lista = document.querySelector('.lista');
         let resultados = datos.data;
         
-        resultados.forEach(function(resultado){
-            lista.innerHTML += '<li>' + '<a href="file:///Users/BigTuna/Documents/PI2020/Proyecto-Integrador/Pi2020/Playlist/track.html?id='+ resultado.id+ '">'+ resultado.title + '</a></li>';
+        resultados.forEach(function(resultados){
+            lista.innerHTML += '<li>' + '<a href="track.html?id='+ resultados.id+ '">'+ resultados.title + '</a></li>';
         })
        
         
@@ -32,5 +32,4 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
-
   

@@ -1,20 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
 body{
     background-image: url(../IMG/Fondo\ PI2020.jpg);
     background-position: center;
 }
-
+.not-home{
+    width: 70%;
+    margin: 30px auto 40px;
+}
+.not-home.playlist{
+    min-height: 400px;
+}
 .header{
     background-color:#353745;
     display: grid;
-    grid-template-columns: 80px 440px;
-    gap: 60%;
+    grid-template-columns: 40% 50%;
     text-decoration-color: white;
-    height: 100%;
-    margin-top: 1%;
-    width: 100%;
     font-family: calibri;
+    justify-content: space-between;
 }
-
 
 a {
     text-decoration: none;
@@ -26,33 +34,38 @@ a:hover {
     color: #a9a9ac;;
 }
 
-.logox{
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
 .nav {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 200px;
-    margin: 3%;
-    gap: 3%;
-    font-size: 5mm; 
-    padding-top: 2%;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 5mm;
+    /* padding-top: 2%; */
     font-family: calibri;
-    padding-right: 2mm;
     text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column-gap: 10px;
+    padding-right: 10px;
+}
+.nav a{
+    text-align: center;
 }
 
+.search-wrapper{
+    position: relative;
+    max-width: 400px;
+    margin: 30px auto;
+}
 
 .search-box{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%,50%);
     background: white;
-    height: 40px;
+    /* height: 40px; */
     border-radius: 40px;
-    padding: 10px;
+    padding: 5px 5px 5px 15px;
+    width: 100%;
+    overflow: hidden;
+}
+.search-box form{
+    overflow: hidden;
 }
 
 
@@ -77,29 +90,19 @@ a:hover {
     color:gray;
     font-size: 16px;
     transition: 0.4s;
-    line-height: 37px;
-    width: 600px;
+    line-height: 40px;
 }
 
 .slidershow{
-    width: 85%;
-    height: 65%;
+    max-width: 800px;
+    margin: 0 auto 30px;
     overflow: hidden;
-    margin-top: 9%;
-    padding-bottom: 4%;
-  }
-  .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+    position: relative;
+}
+
   .navigation{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    justify-content: center;
   }
   .bar{
     width: 50px;
@@ -148,7 +151,13 @@ a:hover {
   #r5:checked ~ .s1{
     margin-left: -80%;
   }
-  
+
+.generos ul {
+    padding: 0;
+}
+.generos li{
+    font-size: 22px;
+}
 
 
 .seccion{
@@ -162,7 +171,7 @@ a:hover {
     font-family: Calibri;
     font-size: 29px;
     color:  #d3d4dd;
-    height: 10%;
+    margin: 20px 0;
 }
 
 .slider{
@@ -262,9 +271,10 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2%;
-    padding-bottom: 10%;
+    padding: 0 40px;
     width: 100%;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .topazo{
@@ -294,6 +304,16 @@ a:hover {
     transform: scale(1.02);
     transition: all ease 0.3s;
 }
+.tracks li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tracks img {
+    padding: 4px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
 
 
  footer {
@@ -306,10 +326,6 @@ a:hover {
 
 ul{
     list-style: none;
-}
-.logo {
-    height: 2cm;
-    width: 6cm;
 }
 
 .arriba ul{
@@ -370,10 +386,10 @@ ul{
     flex-wrap: wrap;
 }
 
-.logo{
+/* .logo{
     height: 50px;
     width: 170px;
-}
+} */
 
 .social-icons a{
     width: 35px;
@@ -450,6 +466,10 @@ ul{
 }
 
 @media(max-width: 720px){
+    .not-home{
+        width: 100%;
+        padding: 0 20px;
+    }
     .arriba, .abajo{
         flex-direction: column;
         align-items: center;
@@ -466,9 +486,13 @@ ul{
         display: block;
     }
 
-}
-
-@media(max-width: 720px){
+    .contenedorr {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+    .contenedorr section {
+        margin-bottom: 30px;
+    }
     .box{
         width: 94%;
         height: 500px;

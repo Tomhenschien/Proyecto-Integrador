@@ -12,7 +12,7 @@ fetch(link)
     let genero = info.data;
     let lista = document.querySelector(".listado");
     for(var i=1; i<10; i++) {
-        lista.innerHTML += '<ul>'+ '<a href="./Detalle.html?id='+ genero[i].id+ '">'+ genero[i].name + '</a>'+ '</ul>';
+        lista.innerHTML += '<li>'+ '<a href="./Detalle.html?id='+ genero[i].id+ '">'+ genero[i].name + '</a>'+ '</li>';
     }
 })
 
